@@ -11,7 +11,6 @@ config_get essid $1 essid
 config_get ap $1 ap
 config_get channel $1 channel
 
-batctl if add eth0
 ip link set up dev eth0
 ip link set mtu 1532 dev wlan0
 iwconfig wlan0 mode ad-hoc essid $essid ap $ap channel $channel
