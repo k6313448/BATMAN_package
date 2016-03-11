@@ -23,7 +23,7 @@ define Package/luci-app-batmanconf
   CATEGORY:=LuCI
   SUBMENU:=3. Applications
   $(call Package/luci/webtemplate)
-  DEPENDS+=+luci
+  DEPENDS+=+luci +kmod-batman-adv +wireless-tools
   TITLE:=batmanconf luci control interface
 endef
 
